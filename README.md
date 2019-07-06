@@ -1,7 +1,6 @@
 # micro-frontend
 
-- [x] React Support
-- [ ] Angular Support
+- [ ] Template for child apps
 - [ ] Separated Build
 - [ ] Import minify js
 - [ ] Import minify js
