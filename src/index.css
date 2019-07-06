@@ -1,0 +1,15 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mf-container {
+    border: 1px solid;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}

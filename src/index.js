@@ -1,8 +1,7 @@
 import * as serviceWorker from './serviceWorker';
-import {
-    registerApplication,
-    start
-} from 'single-spa';
+import { registerApplication, start } from 'single-spa';
+
+import './index.css';
 
 registerApplication('app1', () => import('./containers/app1/index.js'), () => true);
 registerApplication('app2', () => import('./containers/app2/index.js'), () => true);
