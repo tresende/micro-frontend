@@ -1,6 +1,6 @@
 # micro-frontend
 
 - [ ] Template for micro frontend apps
-- [ ] Separated Build
+- [ ] Separated Build file
 - [ ] Import minify js
-- [ ] Import minify js
+- [ ] Main CSS
