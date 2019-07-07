@@ -1,4 +1,3 @@
-import * as serviceWorker from './serviceWorker';
 import { registerApplication, start } from 'single-spa';
 
 import './index.css';
@@ -8,4 +7,3 @@ registerApplication('app2', () => import('./containers/app2/index.js'), () => tr
 registerApplication('app3', () => import('./containers/app3/index.js'), () => true);
 
 start();
-serviceWorker.register();
