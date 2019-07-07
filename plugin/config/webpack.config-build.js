@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src/coi-plugin.js'),
+  entry: path.resolve(__dirname, '../src/root.js'),
   output: {
     filename: 'coi-plugin.js',
     library: 'coi-plugin',
