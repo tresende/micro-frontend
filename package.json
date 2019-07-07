@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm start --prefix root",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-plugin-mac":"npm run build --prefix plugin"
+    "copy":"cp plugin/src/app/App.js root/src/containers/app3/app/"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   "author": "Thiago Resende",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tresende/micro-frontend-flipper/issues"
+    "url": "https://github.com/tresende/micro-frontend/issues"
   },
-  "homepage": "https://github.com/tresende/micro-frontend-flipper#readme"
+  "homepage": "https://github.com/tresende/micro-frontend#readme"
 }
