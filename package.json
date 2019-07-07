@@ -1,0 +1,19 @@
+{
+  "name": "micro-frontend",
+  "version": "1.0.0",
+  "description": "micro-frontend poc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tresende/micro-frontend.git"
+  },
+  "author": "Thiago Resende",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tresende/micro-frontend-flipper/issues"
+  },
+  "homepage": "https://github.com/tresende/micro-frontend-flipper#readme"
+}
