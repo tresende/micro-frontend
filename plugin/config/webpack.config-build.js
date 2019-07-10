@@ -7,7 +7,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   entry: path.resolve(__dirname, '../src/root.js'),
   output: {
-    filename: 'coi-plugin.js',
+    filename: 'index.js',
     library: 'coi-plugin',
     libraryTarget: 'amd',
     path: path.resolve(__dirname, 'build/coi-plugin'),

@@ -1,6 +1,7 @@
 # micro-frontend
 
 - [ ] Template for micro frontend apps
-- [ ] Separated Build file
-- [ ] Import minify js
+- [x] Separated Build file
+- [x] AMD react js build
+- [x] Import minify js
 - [ ] Main CSS
