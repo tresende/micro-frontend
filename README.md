@@ -5,3 +5,4 @@
 - [x] AMD react js build
 - [x] Import minify js
 - [ ] Main CSS
+- [ ] Refactor wbepack
