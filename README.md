@@ -4,6 +4,7 @@
 - [x] Separated Build file
 - [x] AMD react js build
 - [x] Import minify js
-- [ ] Main CSS
+- [ ] Main CSS template
+- [ ] Prevent ignore css
 - [ ] Refactor webpack
 - [ ] Dyanmic copy build
