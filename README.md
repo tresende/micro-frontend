@@ -6,3 +6,4 @@
 - [x] Import minify js
 - [ ] Main CSS
 - [ ] Refactor webpack
+- [ ] Dyanmic copy build
