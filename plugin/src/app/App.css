@@ -1,0 +1,24 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.window_content {
+    text-align: center;
+}
+
+.window_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.window_title_buttons {
+    margin-right: -6px;
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
+}

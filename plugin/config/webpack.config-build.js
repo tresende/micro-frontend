@@ -14,8 +14,11 @@ module.exports = {
   },
   mode: 'production',
   module: {
-    rules: [
-      {parser: {System: false}},
+    rules: [{
+        parser: {
+          System: false
+        }
+      },
       {
         test: /\.js?$/,
         exclude: [path.resolve(__dirname, 'node_modules')],
@@ -52,21 +55,23 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
+        test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+        loader: 'url-loader?limit=100000'
+      },
+      {
         test: /\.krem.css$/,
         exclude: [path.resolve(__dirname, 'node_modules')],
-        use: [
-          {
-            loader: 'kremling-loader',
-            options: {
-              namespace: 'app-dashboard-ui',
-              postcss: {
-                plugins: {
-                  'autoprefixer': {}
-                }
+        use: [{
+          loader: 'kremling-loader',
+          options: {
+            namespace: 'app-dashboard-ui',
+            postcss: {
+              plugins: {
+                'autoprefixer': {}
               }
-            },
+            }
           },
-        ]
+        }, ]
       },
     ],
   },
@@ -93,4 +98,3 @@ module.exports = {
     /^rxjs\/?.*$/,
   ],
 };
-
