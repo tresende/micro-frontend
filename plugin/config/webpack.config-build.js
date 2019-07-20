@@ -1,8 +1,6 @@
 /* eslint-env node */
-const webpack = require('webpack')
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, '../src/root.js'),
@@ -10,7 +8,7 @@ module.exports = {
     filename: 'index.js',
     library: 'coi-plugin',
     libraryTarget: 'amd',
-    path: path.resolve(__dirname, 'build/coi-plugin'),
+    path: path.resolve(__dirname, '../build'),
   },
   mode: 'production',
   module: {
@@ -49,29 +47,8 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/,
-        include: [path.resolve(__dirname, 'node_modules')],
-        exclude: [/\.krem.css$/],
-        use: ['style-loader', 'css-loader'],
-      },
-      {
         test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
         loader: 'url-loader?limit=100000'
-      },
-      {
-        test: /\.krem.css$/,
-        exclude: [path.resolve(__dirname, 'node_modules')],
-        use: [{
-          loader: 'kremling-loader',
-          options: {
-            namespace: 'app-dashboard-ui',
-            postcss: {
-              plugins: {
-                'autoprefixer': {}
-              }
-            }
-          },
-        }, ]
       },
     ],
   },
@@ -83,9 +60,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['build/coi-plugin']),
-    // CopyWebpackPlugin([
-    //   {from: path.resolve(__dirname, 'src/coi-plugin.js')}
-    // ]),
   ],
   devtool: 'source-map',
   externals: [
