@@ -24,7 +24,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        exclude: [path.resolve(__dirname, 'node_modules'), /\.krem.css$/],
+        exclude: [path.resolve(__dirname, 'node_modules')],
         use: [
           'style-loader',
           {
