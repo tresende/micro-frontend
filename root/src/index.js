@@ -1,9 +1,12 @@
-import { registerApplication, start } from 'single-spa';
+import {
+    registerApplication,
+    start
+} from 'single-spa';
 
 import './index.css';
 
-registerApplication('app1', () => import('./containers/app1/index.js'), () => true);
-registerApplication('app2', () => import('./containers/app2/index.js'), () => true);
-registerApplication('app3', () => import('./containers/app3/index.js'), () => true);
+for (let index = 1; index <= 3; index++) {
+    registerApplication('app' + index, () => import('./containers/app' + index + '/index.js'), () => true);
+}
 
 start();
