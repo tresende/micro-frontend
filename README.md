@@ -7,4 +7,4 @@
 - [ ] Main CSS template
 - [ ] Prevent ignore css
 - [ ] Refactor webpack
-- [ ] Dyanmic copy build
+- [x] Dyanmic copy build
