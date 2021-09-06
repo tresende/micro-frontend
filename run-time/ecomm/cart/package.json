@@ -1,5 +1,5 @@
 {
-  "name": "container",
+  "name": "cart",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,17 +11,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "faker": "^5.1.0"
+  },
   "devDependencies": {
-    "webpack": "^5.4.0",
-    "html-webpack-plugin": "^5.1.0",
-    "webpack-cli": "^4.5.0",
-    "nodemon": "^2.0.12",
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.2",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.3.2",
+    "html-webpack-plugin": "^5.1.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.0"
   }
 }
