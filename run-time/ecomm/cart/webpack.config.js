@@ -10,8 +10,15 @@ module.exports = {
     new ModuleFederationPlugin({
       name: 'cart',
       filename: 'teste.js',
+      shared: [
+        {
+          faker: {
+            singleton: true
+          }
+        }
+      ],
       exposes: {
-        './cartIndex': './src'
+        './cartIndex': './src/bootstrap'
       }
     }),
     new HtmlWebpackPlugin({
