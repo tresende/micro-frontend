@@ -1,7 +1,7 @@
 import faker from 'faker'
 
 const mount = (element) => {
-  const cartText = `<div>You have ${faker.random.number()}</div> items in your cart`
+  const cartText = `<div>You have ${faker.random.number()} items in your cart </div> `
 
   element.innerHTML = cartText
 }
