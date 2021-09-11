@@ -7,11 +7,15 @@ const MarketingApp = () => {
   const history = useHistory()
   const ref = useRef(null)
   useEffect(() => {
-    mount(ref.current, {
+    const { onParentNavigate } = mount(ref.current, {
       onNavigate: ({ pathname: nextPathname }) => {
-        history.push(nextPathname)
+        const { pathname } = history.location
+        if (pathname !== nextPathname) {
+          history.push(nextPathname)
+        }
       }
     })
+    history.listen(onParentNavigate)
   }, [])
 
   return <h1 ref={ref} />
