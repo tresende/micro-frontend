@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 
-import { mount } from 'marketing/MarketingApp'
+import { mount } from 'auth/AuthApp'
 
-const MarketingApp = () => {
+const AuthApp = () => {
   const history = useHistory()
   const ref = useRef(null)
   useEffect(() => {
@@ -22,4 +22,4 @@ const MarketingApp = () => {
   return <div ref={ref} />
 }
 
-export default MarketingApp
+export default AuthApp
