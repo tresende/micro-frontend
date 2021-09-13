@@ -2,7 +2,8 @@
   "name": "auth",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -12,6 +13,8 @@
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.2",
     "eslint-config-prettier": "^8.3.0",
