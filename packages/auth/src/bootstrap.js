@@ -4,10 +4,10 @@ import { createMemoryHistory, createBrowserHistory } from 'history'
 
 import App from './App'
 
-const mount = (element, { onNavigate, defaultHistory, initialPath } = {}) => {
+const mount = (element, { onNavigate, onSignIn, defaultHistory, initialPath } = {}) => {
   const history = defaultHistory || createMemoryHistory({ initialEntries: [initialPath] })
   onNavigate && history.listen(onNavigate)
-  ReactDom.render(<App history={history} />, element)
+  ReactDom.render(<App onSignIn={onSignIn} history={history} />, element)
   return {
     onParentNavigate({ pathname: nextPathname }) {
       const { pathname } = history.location
