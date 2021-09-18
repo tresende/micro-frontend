@@ -1,0 +1,98 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/ecomm/cart"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: main
+  reviewers:
+  - tresende
+  assignees:
+  - tresende
+  labels:
+  - dependencies
+- package-ecosystem: npm
+  directory: "/ecomm/container"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: main
+  reviewers:
+  - tresende
+  assignees:
+  - tresende
+  labels:
+  - dependencies
+- package-ecosystem: npm
+  directory: "/ecomm/products"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: main
+  reviewers:
+  - tresende
+  assignees:
+  - tresende
+  labels:
+  - dependencies
+- package-ecosystem: npm
+  directory: "/game"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: main
+  reviewers:
+  - tresende
+  assignees:
+  - tresende
+  labels:
+  - dependencies   
+- package-ecosystem: npm
+  directory: "/packages/auth/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: main
+  reviewers:
+  - tresende
+  assignees:
+  - tresende
+  labels:
+  - dependencies
+- package-ecosystem: npm
+  directory: "/packages/container"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: main
+  reviewers:
+  - tresende
+  assignees:
+  - tresende
+  labels:
+  - dependencies
+- package-ecosystem: npm
+  directory: "/packages/dashboard"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: main
+  reviewers:
+  - tresende
+  assignees:
+  - tresende
+  labels:
+  - dependencies
+- package-ecosystem: npm
+  directory: "/packages/marketing"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: main
+  reviewers:
+  - tresende
+  assignees:
+  - tresende
+  labels:
+  - dependencies     
