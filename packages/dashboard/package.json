@@ -18,7 +18,7 @@
     "@babel/preset-env": "^7.12.1",
     "@vue/compiler-sfc": "^3.0.2",
     "babel-loader": "^8.1.0",
-    "css-loader": "^5.0.0",
+    "css-loader": "^6.3.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
     "node-sass": "^4.14.1",
