@@ -15,21 +15,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
-      - run: npm install
-      - run: npm run build
+    # steps:
+    #   - uses: actions/checkout@v2
+    #   - run: npm install
+    #   - run: npm run build
 
-      - uses: chrislennon/action-aws-cli@v1.1
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
-      - run: aws s3 sync dist s3://${{ secrets.AWS_S3_BUCKET_NAME }}/marketing/latest
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      - run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/marketing/latest/remoteEntry.js"
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    #   - uses: chrislennon/action-aws-cli@v1.1
+    #     env:
+    #       ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
+    #   - run: aws s3 sync dist s3://${{ secrets.AWS_S3_BUCKET_NAME }}/marketing/latest
+    #     env:
+    #       ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
+    #       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+    #       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    #   - run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/marketing/latest/remoteEntry.js"
+    #     env:
+    #       ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
+    #       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+    #       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
