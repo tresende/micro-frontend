@@ -15,10 +15,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    # steps:
-    #   - uses: actions/checkout@v2
-    #   - run: npm install
-    #   - run: npm run build
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run build
 
     #   - uses: chrislennon/action-aws-cli@v1.1
     #     env:
