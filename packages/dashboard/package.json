@@ -6,7 +6,7 @@
     "build": "webpack --config config/webpack.prod.js"
   },
   "dependencies": {
-    "chart.js": "2.9.4",
+    "chart.js": "3.6.1",
     "primeflex": "^2.0.0",
     "primeicons": "^4.0.0",
     "primevue": "^3.0.1",
