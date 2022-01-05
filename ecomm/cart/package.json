@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "faker": "^4.1.0"
+    "faker": "^6.6.6"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
